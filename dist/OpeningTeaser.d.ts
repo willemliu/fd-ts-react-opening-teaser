@@ -1,4 +1,4 @@
-import { PureComponent } from "react";
+import React, { PureComponent } from "react";
 import { CardTypes } from "@fdmg/fd-card";
 import { RelatedArticle, ImageType, SourceSet } from "@fdmg/fd-teaser";
 export interface Props {
@@ -14,6 +14,7 @@ export interface Props {
     hideFooter?: boolean;
     id: string;
     image: ImageType;
+    onBookmark?: (e: React.MouseEvent<HTMLElement>) => void;
     readableAge: string;
     related?: RelatedArticle[];
     shareTitle?: string;

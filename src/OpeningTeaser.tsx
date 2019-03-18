@@ -28,6 +28,7 @@ export interface Props {
     hideFooter?: boolean;
     id: string;
     image: ImageType;
+    onBookmark?: (e: React.MouseEvent<HTMLElement>) => void;
     readableAge: string;
     related?: RelatedArticle[];
     shareTitle?: string;
@@ -67,6 +68,7 @@ export default class OpeningTeaser extends PureComponent<Props, any> {
                         comments={this.props.comments}
                         date={this.props.date}
                         description={this.props.description}
+                        onBookmark={this.props.onBookmark}
                         shareTitle={this.props.shareTitle}
                         subject={this.props.subject}
                         teaserId={this.props.id}
