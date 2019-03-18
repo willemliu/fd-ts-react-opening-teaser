@@ -114,7 +114,7 @@ exports[`OpeningTeaser renders bookmarked correctly 1`] = `
         </span>
       </span>
       <span
-        className="favorite"
+        className="favorite selected"
         data-addurl="/add-favorite"
         data-articleid="1286721"
         data-deleteurl="/delete-favorite"

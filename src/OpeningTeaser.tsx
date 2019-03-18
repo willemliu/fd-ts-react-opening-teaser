@@ -18,6 +18,7 @@ import {
 export interface Props {
     alt: string;
     baseUrl: string;
+    bookmarked?: boolean;
     cardStyle?: CardTypes;
     className?: string;
     comments?: number;
@@ -65,6 +66,7 @@ export default class OpeningTeaser extends PureComponent<Props, any> {
                     />
                     {this.props.hideFooter ? null : <TeaserFooter
                         baseUrl={this.props.baseUrl}
+                        bookmarked={this.props.bookmarked}
                         comments={this.props.comments}
                         date={this.props.date}
                         description={this.props.description}

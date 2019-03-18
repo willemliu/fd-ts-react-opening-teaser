@@ -4,6 +4,7 @@ import { RelatedArticle, ImageType, SourceSet } from "@fdmg/fd-teaser";
 export interface Props {
     alt: string;
     baseUrl: string;
+    bookmarked?: boolean;
     cardStyle?: CardTypes;
     className?: string;
     comments?: number;
